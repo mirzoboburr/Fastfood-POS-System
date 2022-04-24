@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="burger.png" />
+    <None Remove="log-out.png" />
+    <None Remove="logo.png" />
+    <None Remove="participant.png" />
+    <None Remove="png-transparent-fast-food-hamburger-salsa-breakfast-best-burger-food-delicious-food-food-breakfast-chicken-meat.png" />
+    <None Remove="twister.jpg" />
+    <None Remove="twister.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="burger.png" />
+    <Resource Include="log-out.png" />
+    <Resource Include="logo.png" />
+    <Resource Include="participant.png" />
+    <Resource Include="png-transparent-fast-food-hamburger-salsa-breakfast-best-burger-food-delicious-food-food-breakfast-chicken-meat.png" />
+    <Resource Include="twister.jpg" />
+    <Resource Include="twister.png" />
+  </ItemGroup>
+
+</Project>

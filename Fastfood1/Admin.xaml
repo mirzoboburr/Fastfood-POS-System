@@ -1,0 +1,31 @@
+﻿<Window x:Class="Fastfood1.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fastfood1"
+        mc:Ignorable="d"
+        Title="Admin" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="21*"/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="foods" HorizontalAlignment="Left" Height="76" Margin="260,80,0,0" VerticalAlignment="Top" Width="264" Grid.Row="0" Background="#FFA3080C" MouseDown="food1_Mousedown">
+            <Label x:Name="food" Content="Food" BorderBrush="#FF76BEDC" Height="76" Width="124" Margin="102,0,43,0" FontWeight="Bold" FontSize="24" Padding="42,19,5,0" Foreground="White"/>
+            <Image Height="76" Width="104" Margin="-7,-75,154,0" Source="/logo.png"/>
+        </StackPanel>
+        <StackPanel x:Name="Employee" HorizontalAlignment="Left" Height="76" Margin="260,154,0,0" VerticalAlignment="Top" Width="264" Background="#FFA3080C">
+            <Image Height="54" Width="94" Margin="-155,12,0,0" Source="/participant.png"/>
+            <Label Content="Employee" Height="48" Width="136" Margin="59,-52,-48,0" Foreground="White" FontSize="22" FontWeight="Bold" Padding="27,7,5,5"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="76" Margin="260,225,0,0" VerticalAlignment="Top" Width="264" Grid.RowSpan="2" Background="#FFA3080C"/>
+        <StackPanel x:Name="Logout" HorizontalAlignment="Left" Height="76" Margin="260,13,0,0" VerticalAlignment="Top" Width="264" Grid.Row="1" Background="#FFA3080C">
+            <Label Content="Log Out" Height="57" Width="102" FontSize="22" Foreground="White" FontWeight="Bold" Margin="116,18,0,0"/>
+            <Image Height="59" Width="100" Margin="0,-66,147,19" OpacityMask="Black" Source="/log-out.png"/>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>
